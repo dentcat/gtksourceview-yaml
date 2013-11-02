@@ -18,7 +18,7 @@ Remember to restart your program for the change to take effect.
 
 ## License
 
-Copyright (C) 2013 Masood Behabadi <masood@dentcat.com>
+Copyright (C) 2013 Masood Behabadi 
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
