@@ -9,10 +9,10 @@ YAML Syntax Highlighting
 Download and place `yaml.lang` into one of the following directories
 depending on the version of GtkSourceView that you are using:
 
-    - `~/.local/share/gtksourceview-2.0/language-specs/`    
-    - `~/.local/share/gtksourceview-3.0/language-specs/`    
-    - `/usr/share/gtksourceview-2.0/language-specs/`    
-    - `/usr/share/gtksourceview-3.0/language-specs/`    
+-   ~/.local/share/gtksourceview-2.0/language-specs/    
+-   ~/.local/share/gtksourceview-3.0/language-specs/    
+-   /usr/share/gtksourceview-2.0/language-specs/    
+-   /usr/share/gtksourceview-3.0/language-specs/    
 
 Remember to restart your program for the change to take effect.
 
