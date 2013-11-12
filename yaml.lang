@@ -48,7 +48,7 @@
     <define-regex id="lschar">[\s\[\{,]</define-regex>
     <define-regex id="rschar">[\s\]\},]</define-regex>
         
-    <context id="scalar">
+    <context id="scalar" class-disabled="no-spell-check">
       <start>(?&lt;=^|\s)[|&gt;]$</start>
       <include>
         <context end-parent="true" style-ref="scalar">
@@ -73,17 +73,17 @@
       <match>(?&lt;=^|\s)&amp;\%{ischar}+(?=$|\s)</match>
     </context>
     
-    <context id="string" end-at-line-end="true" style-ref="string">
+    <context id="string" end-at-line-end="true" style-ref="string" class-disabled="no-spell-check">
       <start>(?&lt;=^|\%{lschar})(?'q'["'])</start>
       <end>[^\\]\%{q@start}</end>
     </context>
     
-    <context id="unquoted-string" end-at-line-end="true" style-ref="string">
+    <context id="unquoted-string" end-at-line-end="true" style-ref="string" class-disabled="no-spell-check">
       <start>(?=\%{ischar}|[:-\?\]\}]\S)</start>
       <end>(?=:\s|:$|\s#)</end>
     </context>
     
-    <context id="inline-unquoted" end-at-line-end="true" style-ref="string">
+    <context id="inline-unquoted" end-at-line-end="true" style-ref="string" class-disabled="no-spell-check">
       <start>(?=\%{ischar}|-\S)</start>
       <end>(?=[:,?\[\{\]\}]|\s#)</end>
     </context>
@@ -187,7 +187,7 @@
       <match>^%\%{ischar}(?:\%{ischar}|\s+)*</match>
     </context>
         
-    <context id="yaml">
+    <context id="yaml" class="no-spell-check">
       <include>
         <context ref="directive"/>
         <context ref="document"/>        
